@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Справочник лекарственных препаратов">
+    <meta name="keywords" content="справочник, лекарства">
+    <meta name="author" content="Берлин Андрей berlandbor">
+    <title>Справочник по лекарствам</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Справочник по лекарствам</h1>
+        <form id="searchForm">
+            <input type="text" id="searchInput" placeholder="Введите название лекарства...">
+            <button type="button" onclick="searchMedicine()">Поиск</button>
+        </form>
+        <div id="searchResults"></div>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="fullArticleContent"></div>
+        </div>
+    </div>
+<footer>
+  <p>berlandbor ❤️</p>
+</footer>
+    <script src="script.js"></script>
+</body>
+</html>
